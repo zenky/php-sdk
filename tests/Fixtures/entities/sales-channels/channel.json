@@ -1,0 +1,25 @@
+{
+  "id": "90b94003-f140-4a3d-af63-3665db4f1c73",
+  "store_id": "8ffdea45-ca27-46fb-9e65-80abd8fdced8",
+  "type": {
+    "id": "website",
+    "name": "Вебсайт"
+  },
+  "name": "developer.zenky.app",
+  "created_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2020-06-04 06:46:13",
+    "datetime": "2020-06-04 14:46:13",
+    "datetime_at": "04.06.2020 в 14:46",
+    "diff": "только что",
+    "timestamp": 1591253173
+  },
+  "updated_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2020-06-04 06:46:13",
+    "datetime": "2020-06-04 14:46:13",
+    "datetime_at": "04.06.2020 в 14:46",
+    "diff": "только что",
+    "timestamp": 1591253173
+  }
+}

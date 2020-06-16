@@ -1,0 +1,23 @@
+{
+  "id": "8ffdeafc-ce5b-4079-b73f-a2d39f8bde70",
+  "name": "Улан-Удэ",
+  "timezone": "Asia/Irkutsk",
+  "lat": 51.81977164755107,
+  "lng": 107.60812989387635,
+  "created_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 03:00:00",
+    "datetime_at": "01.03.2020 в 03:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  },
+  "updated_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-04-01 02:07:25",
+    "datetime": "2020-04-01 05:07:25",
+    "datetime_at": "01.04.2020 в 05:07",
+    "diff": "2 месяца назад",
+    "timestamp": 1585706845
+  }
+}

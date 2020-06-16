@@ -1,0 +1,46 @@
+{
+  "id": "8f22ce89-230a-42a1-8552-c4d3a92f952b",
+  "name": "Bronze",
+  "expenses": {
+    "value": 100000,
+    "short": "1 000",
+    "trimmed": "1000",
+    "full": "1 000 руб.",
+    "currency": {
+      "name": "Российский рубль",
+      "thousands_separator": " ",
+      "decimals_separator": ".",
+      "prefix": "",
+      "suffix": " руб.",
+      "symbol": "₽"
+    }
+  },
+  "cashback_rate": {
+    "value": 0.05,
+    "percentage": 5
+  },
+  "payment_rate": {
+    "value": 0.3,
+    "percentage": 30
+  },
+  "cashier_reward_rate": {
+    "value": 0.01,
+    "percentage": 1
+  },
+  "created_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2019-11-15 05:42:47",
+    "datetime": "2019-11-15 13:42:47",
+    "datetime_at": "15.11.2019 в 13:42",
+    "diff": "6 месяцев назад",
+    "timestamp": 1573796567
+  },
+  "updated_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2019-11-15 05:42:47",
+    "datetime": "2019-11-15 13:42:47",
+    "datetime_at": "15.11.2019 в 13:42",
+    "diff": "6 месяцев назад",
+    "timestamp": 1573796567
+  }
+}

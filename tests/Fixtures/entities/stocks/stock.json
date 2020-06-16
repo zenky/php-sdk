@@ -1,0 +1,24 @@
+{
+  "id": "8ffdeb5a-b116-4d6a-80e8-88e33443aea8",
+  "name": "ТРК Еврозона",
+  "display_name": "ТРК Еврозона",
+  "description": "",
+  "hidden": false,
+  "hidden_status": "Отображается",
+  "created_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 03:00:00",
+    "datetime_at": "01.03.2020 в 03:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  },
+  "updated_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 03:00:00",
+    "datetime_at": "01.03.2020 в 03:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  }
+}

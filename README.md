@@ -40,7 +40,7 @@ $ composer test
 
 ## Безопасность
 
-Если вы нашли уязвимость в коде библиотеки или в API сервиса, сообщите нам на
+Если вы нашли уязвимость в коде библиотеки или в API, сообщите нам на
 [tech@zenky.io](mailto:tech@zenky.io) вместо issue-трекера.
 
 ## Лицензия
@@ -49,12 +49,12 @@ The MIT License (MIT). Полный текст лицензии доступен
 
 [ico-version]: https://poser.pugx.org/zenky/zenky/version?format=flat
 [ico-license]: https://poser.pugx.org/zenky/zenky/license?format=flat
-[ico-travis]: https://api.travis-ci.org/zenky/zenky-php-sdk.svg?branch=master
+[ico-travis]: https://api.travis-ci.org/zenky/php-sdk.svg?branch=master
 [ico-styleci]: https://styleci.io/repos/XXX/shield?branch=master&style=flat
-[ico-scrutinizer]: https://scrutinizer-ci.com/g/zenky/zenky-php-sdk/badges/quality-score.png?b=master
+[ico-scrutinizer]: https://scrutinizer-ci.com/g/zenky/php-sdk/badges/quality-score.png?b=master
 
 [link-packagist]: https://packagist.org/packages/zenky/zenky
-[link-travis]: https://travis-ci.org/zenky/zenky-php-sdk
+[link-travis]: https://travis-ci.org/zenky/php-sdk
 [link-styleci]: https://styleci.io/repos/XXX
-[link-scrutinizer]: https://scrutinizer-ci.com/g/zenky/zenky-php-sdk/
+[link-scrutinizer]: https://scrutinizer-ci.com/g/zenky/php-sdk/
 [link-author]: https://github.com/zenky

@@ -1,0 +1,24 @@
+{
+  "id": "8ffdea87-0960-4669-8bc8-4b23d6045535",
+  "name": "Розничная",
+  "kind": {
+    "id": "retail",
+    "name": "Розничная"
+  },
+  "created_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 08:00:00",
+    "datetime_at": "01.03.2020 в 08:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  },
+  "updated_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 08:00:00",
+    "datetime_at": "01.03.2020 в 08:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  }
+}

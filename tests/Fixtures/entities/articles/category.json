@@ -1,0 +1,20 @@
+{
+  "id": "8ffdebc2-4f81-4fab-98c1-ad13247d4e8b",
+  "name": "Новости",
+  "created_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-03 03:50:48",
+    "datetime": "2020-03-03 06:50:48",
+    "datetime_at": "03.03.2020 в 06:50",
+    "diff": "2 месяца назад",
+    "timestamp": 1583207448
+  },
+  "updated_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-03 03:50:48",
+    "datetime": "2020-03-03 06:50:48",
+    "datetime_at": "03.03.2020 в 06:50",
+    "diff": "2 месяца назад",
+    "timestamp": 1583207448
+  }
+}

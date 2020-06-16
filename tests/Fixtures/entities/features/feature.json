@@ -1,0 +1,26 @@
+{
+  "id": "8ffdfd5d-6c02-4d54-b52a-5a3d18c2b080",
+  "name": "Длина (мм)",
+  "filterable": true,
+  "field_type": {
+    "id": "select",
+    "name": "Список"
+  },
+  "range_type": null,
+  "created_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 03:00:00",
+    "datetime_at": "01.03.2020 в 03:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  },
+  "updated_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 03:00:00",
+    "datetime_at": "01.03.2020 в 03:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  }
+}

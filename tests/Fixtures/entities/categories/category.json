@@ -1,0 +1,24 @@
+{
+  "id": "8ffdf356-faa8-4f3b-9279-5f948b90f62e",
+  "short_id": "8ffdf356faa80f62",
+  "parent_id": "",
+  "hidden": false,
+  "slug": "smartfony",
+  "name": "Смартфоны",
+  "created_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-03-01 00:00:00",
+    "datetime": "2020-03-01 03:00:00",
+    "datetime_at": "01.03.2020 в 03:00",
+    "diff": "3 месяца назад",
+    "timestamp": 1583020800
+  },
+  "updated_at": {
+    "timezone": "Europe/Moscow",
+    "datetime_utc": "2020-06-04 05:06:07",
+    "datetime": "2020-06-04 08:06:07",
+    "datetime_at": "04.06.2020 в 08:06",
+    "diff": "19 минут назад",
+    "timestamp": 1591247167
+  }
+}

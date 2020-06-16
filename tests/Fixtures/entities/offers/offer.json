@@ -1,0 +1,22 @@
+{
+  "id": "90c1b2f3-0ff8-48e7-9a64-43303c8125ec",
+  "name": "2 товара по цене 3!",
+  "body": "",
+  "description": "",
+  "created_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2020-06-08 11:34:13",
+    "datetime": "2020-06-08 19:34:13",
+    "datetime_at": "08.06.2020 в 19:34",
+    "diff": "23 секунды назад",
+    "timestamp": 1591616053
+  },
+  "updated_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2020-06-08 11:34:28",
+    "datetime": "2020-06-08 19:34:28",
+    "datetime_at": "08.06.2020 в 19:34",
+    "diff": "только что",
+    "timestamp": 1591616068
+  }
+}
