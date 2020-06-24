@@ -9,41 +9,29 @@ use Zenky\Stores\Interfaces\StoreInterface;
 
 trait GeneratesRequestParams
 {
-    protected function getRequestParams(?StoreInterface $store, ApiRequestInterface $request, array $payload = [], ?string $token = null): array
+    protected function getRequestParams(?StoreInterface $store, ApiRequestInterface $request, ?array $payload = null, ?string $token = null): array
     {
-        $params = [];
+        $params = [
+            'query' => $request->getQuery(),
+            'json' => $payload,
+            'headers' => $this->getHeaders($request, $store, $token),
+        ];
 
-        if (!empty($query = $request->getQuery())) {
-            $params['query'] = $query;
-        }
-
-        if (!is_null($payload)) {
-            $params['json'] = $payload;
-        }
-
-        if (!is_null($headers = $this->getHeaders($store, $request, $token))) {
-            $params['headers'] = $headers;
-        }
-
-        return $params;
+        return array_filter($params, fn ($value) => !is_null($value) && !empty($value));
     }
 
-    private function getHeaders(?StoreInterface $store, ApiRequestInterface $request, ?string $token): ?array
+    private function getHeaders(ApiRequestInterface $request, ?StoreInterface $store, ?string $token): ?array
     {
-        $headers = [];
+        $headers = [
+            'Authorization' => !is_null($token) ? 'Bearer '.$token : null,
+            'X-Store-Id' => !is_null($store) ? $store->getId() : null,
+            'X-Timezone' => $request->getTimezone(),
+            'X-Locale' => $request->getLocale(),
+        ];
 
-        if (!is_null($token)) {
-            $headers['Authorization'] = 'Bearer '.$token;
-        }
-
-        if (!is_null($store)) {
-            $headers['X-Store-Id'] = $store->getId();
-        }
-
-        if (!is_null($request->getTimezone())) {
-            $headers['X-Timezone'] = $request->getTimezone();
-        }
-
-        return empty($headers) ? null : $headers;
+        return array_filter(
+            array_merge($headers, $request->getHeaders()),
+            fn ($value) => !is_null($value) && !empty($value)
+        );
     }
 }

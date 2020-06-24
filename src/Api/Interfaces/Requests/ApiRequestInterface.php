@@ -20,7 +20,17 @@ interface ApiRequestInterface
 
     public function addQuery(string $key, $value): ApiRequestInterface;
 
+    public function getHeaders(): array;
+
+    public function setHeaders(array $headers): ApiRequestInterface;
+
+    public function addHeader(string $name, $value): ApiRequestInterface;
+
     public function getTimezone(): ?string;
 
     public function setTimezone(string $timezone): ApiRequestInterface;
+
+    public function getLocale(): ?string;
+
+    public function setLocale(string $locale): ApiRequestInterface;
 }

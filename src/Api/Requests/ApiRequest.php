@@ -11,7 +11,9 @@ class ApiRequest implements ApiRequestInterface
     private ?string $method = null;
     private ?string $url = null;
     private ?string $timezone = null;
+    private ?string $locale = null;
     private array $query = [];
+    private array $headers = [];
 
     public function getMethod(): ?string
     {
@@ -60,6 +62,25 @@ class ApiRequest implements ApiRequestInterface
         return $this;
     }
 
+    public function getHeaders(): array
+    {
+        return $this->headers;
+    }
+
+    public function setHeaders(array $headers): ApiRequestInterface
+    {
+        $this->headers = $headers;
+
+        return $this;
+    }
+
+    public function addHeader(string $name, $value): ApiRequestInterface
+    {
+        $this->headers[$name] = $value;
+
+        return $this;
+    }
+
     public function getTimezone(): ?string
     {
         return $this->timezone;
@@ -68,6 +89,18 @@ class ApiRequest implements ApiRequestInterface
     public function setTimezone(string $timezone): ApiRequestInterface
     {
         $this->timezone = $timezone;
+
+        return $this;
+    }
+
+    public function getLocale(): ?string
+    {
+        return $this->locale;
+    }
+
+    public function setLocale(string $locale): ApiRequestInterface
+    {
+        $this->locale = $locale;
 
         return $this;
     }

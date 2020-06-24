@@ -34,7 +34,7 @@ class Pagination extends AbstractEntity implements PaginationInterface
         return $this->getUrl('previous');
     }
 
-    public function getNextPageUrl(): string
+    public function getNextPageUrl(): ?string
     {
         return $this->getUrl('next');
     }

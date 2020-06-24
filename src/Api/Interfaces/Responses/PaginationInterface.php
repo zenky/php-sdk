@@ -16,5 +16,5 @@ interface PaginationInterface
 
     public function getPreviousPageUrl(): ?string;
 
-    public function getNextPageUrl(): string;
+    public function getNextPageUrl(): ?string;
 }
