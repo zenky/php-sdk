@@ -18,8 +18,10 @@ class VariantOptionsSyncGateServiceTest extends TestCase
         $client->shouldReceive('request')
             ->with('POST', 'sync-gate/secret/variant-options', [
                 'json' => [
-                    ['id' => 1, 'name' => 'First'],
-                    ['id' => 2, 'name' => 'Second'],
+                    'payload' => [
+                        ['id' => 1, 'name' => 'First'],
+                        ['id' => 2, 'name' => 'Second'],
+                    ],
                 ],
             ])
             ->andReturn(FakeResponse::syncGate());
