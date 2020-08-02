@@ -22,7 +22,7 @@ abstract class AbstractSyncGateService implements SyncGateServiceInterface
 
     public function synchronize(string $token, array $payload): SyncGateResponseInterface
     {
-        $url = 'sync-gates/'.$token.'/'.$this->getBaseUrl($token);
+        $url = 'sync-gate/'.$token.'/'.$this->getBaseUrl($token);
 
         $response = $this->client->request('POST', $url, ['json' => $payload]);
         $data = json_decode((string) $response->getBody(), true);

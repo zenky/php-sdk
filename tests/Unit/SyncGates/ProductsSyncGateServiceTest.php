@@ -16,24 +16,13 @@ class ProductsSyncGateServiceTest extends TestCase
     {
         $client = \Mockery::mock(ClientInterface::class);
         $client->shouldReceive('request')
-            ->with('POST', 'sync-gates/secret/products', [
+            ->with('POST', 'sync-gate/secret/products', [
                 'json' => [
                     ['id' => 1, 'name' => 'First'],
                     ['id' => 2, 'name' => 'Second'],
                 ],
             ])
-            ->andReturn(
-                FakeResponse::make([
-                    'data' => [
-                        'count' => 2,
-                        'created_count' => 2,
-                        'existed_count' => 0,
-                        'updated_count' => 0,
-                        'deleted_count' => 0,
-                        'sync_identifier' => 'testing',
-                    ],
-                ])
-            );
+            ->andReturn(FakeResponse::syncGate());
 
         $service = new ProductsSyncGateService($client);
         $response = $service->synchronize('secret', [

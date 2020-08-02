@@ -19,4 +19,18 @@ class FakeResponse
     {
         return new Response(204, ['Content-Type' => 'text/plain'], '');
     }
+
+    public static function syncGate(array $merge = [])
+    {
+        return static::make([
+            'data' => array_merge([
+                'count' => 2,
+                'created_count' => 2,
+                'existed_count' => 0,
+                'updated_count' => 0,
+                'deleted_count' => 0,
+                'sync_identifier' => 'testing',
+            ], $merge),
+        ]);
+    }
 }
