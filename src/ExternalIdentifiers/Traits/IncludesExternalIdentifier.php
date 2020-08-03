@@ -12,6 +12,10 @@ trait IncludesExternalIdentifier
     public function getExternalIdentifier(): ?ExternalIdentifierInterface
     {
         return $this->getCachedEntity('external_identifier', function () {
+            if (!$this->attributeFilled('external_identifier')) {
+                return null;
+            }
+
             return new ExternalIdentifier(
                 $this->data['external_identifier']['external_id'],
                 $this->data['external_identifier']['internal_id'],

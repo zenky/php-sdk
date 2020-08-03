@@ -14,6 +14,11 @@ abstract class AbstractEntity
         $this->data = $data;
     }
 
+    public function getData()
+    {
+        return $this->data;
+    }
+
     public function getAttribute(string $attribute)
     {
         return $this->data[$attribute] ?? null;
@@ -53,7 +58,7 @@ abstract class AbstractEntity
     {
         return $this->getCachedEntity('attribute_'.$attribute.'_collection', function () use ($attribute, $builder) {
             if (!$this->attributeFilled($attribute) || !is_array($this->data[$attribute])) {
-                return null;
+                return [];
             }
 
             return array_map($builder, $this->data[$attribute]);
