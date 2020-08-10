@@ -21,7 +21,7 @@ class WebhookReceiversService extends AbstractApiService implements WebhookRecei
 {
     protected function getRootUrl(StoreInterface $store, ApiRequestInterface $request): string
     {
-        return 'webhook-receivers';
+        return 'store/webhook-receivers';
     }
 
     public function create(StoreInterface $store, CreateRequestInterface $request): WebhookReceiverInterface

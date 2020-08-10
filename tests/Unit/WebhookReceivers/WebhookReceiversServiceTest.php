@@ -24,7 +24,7 @@ class WebhookReceiversServiceTest extends TestCase
         $client = $this->createHttpMockForCreateRequest(
             $store,
             $request,
-            'webhook-receivers',
+            'store/webhook-receivers',
             fn () => $this->createFakeResponseForEntity('webhook-receivers/receiver.json')
         );
 
@@ -41,7 +41,7 @@ class WebhookReceiversServiceTest extends TestCase
         $client = $this->createHttpMockForListRequest(
             $store,
             $request,
-            'webhook-receivers',
+            'store/webhook-receivers',
             fn () => $this->createFakeResponseForEntitiesCollection(5, 'webhook-receivers/receiver.json')
         );
 
@@ -63,7 +63,7 @@ class WebhookReceiversServiceTest extends TestCase
         $client = $this->createHttpMockForShowRequest(
             $store,
             $request,
-            'webhook-receivers/id',
+            'store/webhook-receivers/id',
             fn () => $this->createFakeResponseForEntity('webhook-receivers/receiver.json')
         );
 
@@ -80,7 +80,7 @@ class WebhookReceiversServiceTest extends TestCase
         $client = $this->createHttpMockForUpdateRequest(
             $store,
             $request,
-            'webhook-receivers/id',
+            'store/webhook-receivers/id',
             fn () => $this->createFakeResponseForEntity('webhook-receivers/receiver.json')
         );
 
@@ -97,7 +97,7 @@ class WebhookReceiversServiceTest extends TestCase
         $client = $this->createHttpMockForDeleteRequest(
             $store,
             $request,
-            'webhook-receivers/id'
+            'store/webhook-receivers/id'
         );
 
         $service = new WebhookReceiversService($client, 'secret');
