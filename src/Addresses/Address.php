@@ -40,9 +40,19 @@ class Address extends AbstractApiEntity implements AddressInterface
         return $this->data['city'];
     }
 
+    public function getCitWithoutType(): ?string
+    {
+        return $this->data['city_without_type'];
+    }
+
     public function getStreet(): ?string
     {
         return $this->data['street'];
+    }
+
+    public function getStreetWithoutType(): ?string
+    {
+        return $this->data['street_without_type'];
     }
 
     public function getHouse(): ?string
