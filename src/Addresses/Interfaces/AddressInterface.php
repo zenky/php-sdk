@@ -20,7 +20,7 @@ interface AddressInterface
 
     public function getCity(): ?string;
 
-    public function getCitWithoutType(): ?string;
+    public function getCityWithoutType(): ?string;
 
     public function getStreet(): ?string;
 
