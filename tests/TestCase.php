@@ -9,6 +9,7 @@ use GuzzleHttp\Psr7\Response;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase as BaseTestCase;
+use Zenky\Api\Entities\BasicApiClientFactory;
 use Zenky\Api\Interfaces\Requests\CreateRequestInterface;
 use Zenky\Api\Interfaces\Requests\DeleteRequestInterface;
 use Zenky\Api\Interfaces\Requests\ListRequestInterface;
@@ -30,7 +31,7 @@ abstract class TestCase extends BaseTestCase
 
         call_user_func_array($mocker, [$mock]);
 
-        return $mock;
+        return new BasicApiClientFactory($mock);
     }
 
     public function createHttpMockForCreateRequest(

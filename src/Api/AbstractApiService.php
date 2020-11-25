@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Zenky\Api;
 
 use GuzzleHttp\ClientInterface;
+use Zenky\Api\Interfaces\ApiClientFactoryInterface;
 use Zenky\Api\Interfaces\ProtectedServiceInterface;
 use Zenky\Api\Interfaces\Requests\ApiRequestInterface;
 use Zenky\Api\Interfaces\Requests\CreateRequestInterface;
@@ -22,14 +23,14 @@ abstract class AbstractApiService
     private ClientInterface $client;
     private ?string $token;
 
-    public function __construct(ClientInterface $client, ?string $token = null)
+    public function __construct(ApiClientFactoryInterface $apiClient, ?string $token = null)
     {
-        $this->client = $client;
-        $this->token = $token;
-
         if ($this instanceof ProtectedServiceInterface && is_null($token)) {
             throw new \RuntimeException('API token required for this protected API Service.');
         }
+
+        $this->client = $apiClient->makeHttpClient();
+        $this->token = $token;
     }
 
     protected function getRootUrl(StoreInterface $store, ApiRequestInterface $request): string

@@ -9,6 +9,7 @@ use Zenky\Cities\Interfaces\CityInterface;
 use Zenky\Common\Interfaces\EnumInterface;
 use Zenky\Common\Interfaces\PriceInterface;
 use Zenky\Customers\Interfaces\CustomerInterface;
+use Zenky\OrderPayments\Interfaces\OrderPaymentTransactionInterface;
 use Zenky\Stocks\Interfaces\StockInterface;
 
 interface OrderInterface
@@ -64,6 +65,6 @@ interface OrderInterface
     /** @return array|OrderStatusProgressInterface[] */
     public function getStatusesProgress(): array;
 
-    /** @return array|\Zenky\OrderPayments\Interfaces\OrderPaymentTransactionInterface[] */
+    /** @return array|OrderPaymentTransactionInterface[] */
     public function getPaymentTransactions(): array;
 }
