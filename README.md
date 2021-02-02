@@ -1,6 +1,6 @@
 # Zenky PHP SDK
 
-[![Build Status][ico-travis]][link-travis]
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/zenky/php-sdk/test?label=Tests)
 [![StyleCI][ico-styleci]][link-styleci]
 [![ScrutinizerCI][ico-scrutinizer]][link-scrutinizer]
 [![Latest Version on Packagist][ico-version]][link-packagist]
@@ -49,12 +49,10 @@ The MIT License (MIT). Полный текст лицензии доступен
 
 [ico-version]: https://poser.pugx.org/zenky/zenky/version?format=flat
 [ico-license]: https://poser.pugx.org/zenky/zenky/license?format=flat
-[ico-travis]: https://api.travis-ci.org/zenky/php-sdk.svg?branch=master
 [ico-styleci]: https://styleci.io/repos/270612296/shield?branch=master&style=flat
 [ico-scrutinizer]: https://scrutinizer-ci.com/g/zenky/php-sdk/badges/quality-score.png?b=master
 
 [link-packagist]: https://packagist.org/packages/zenky/zenky
-[link-travis]: https://travis-ci.org/zenky/php-sdk
 [link-styleci]: https://styleci.io/repos/270612296
 [link-scrutinizer]: https://scrutinizer-ci.com/g/zenky/php-sdk/
 [link-author]: https://github.com/zenky

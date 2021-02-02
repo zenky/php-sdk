@@ -60,6 +60,16 @@ class Address extends AbstractApiEntity implements AddressInterface
         return $this->data['house'];
     }
 
+    public function getBlock(): ?string
+    {
+        return $this->data['block'];
+    }
+
+    public function getBlockWithoutType(): ?string
+    {
+        return $this->data['block_without_type'];
+    }
+
     public function getFullAddress(): ?string
     {
         return $this->data['full'];

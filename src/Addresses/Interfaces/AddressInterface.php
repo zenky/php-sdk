@@ -28,6 +28,10 @@ interface AddressInterface
 
     public function getHouse(): ?string;
 
+    public function getBlock(): ?string;
+
+    public function getBlockWithoutType(): ?string;
+
     public function getFullAddress(): ?string;
 
     public function getCoordinates(): ?GeoPosition;
