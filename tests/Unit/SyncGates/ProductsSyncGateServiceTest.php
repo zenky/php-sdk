@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Zenky\Tests\Unit\SyncGates;
 
 use GuzzleHttp\ClientInterface;
+use Zenky\Api\Entities\BasicApiClientFactory;
 use Zenky\SyncGates\Interfaces\Responses\SyncGateResponseInterface;
 use Zenky\SyncGates\ProductsSyncGateService;
 use Zenky\Tests\Fakes\FakeResponse;
@@ -26,7 +27,7 @@ class ProductsSyncGateServiceTest extends TestCase
             ])
             ->andReturn(FakeResponse::syncGate());
 
-        $service = new ProductsSyncGateService($client);
+        $service = new ProductsSyncGateService(new BasicApiClientFactory($client));
         $response = $service->synchronize('secret', [
             ['id' => 1, 'name' => 'First'],
             ['id' => 2, 'name' => 'Second'],

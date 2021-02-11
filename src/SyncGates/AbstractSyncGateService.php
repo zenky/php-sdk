@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Zenky\SyncGates;
 
 use GuzzleHttp\ClientInterface;
+use Zenky\Api\Interfaces\ApiClientFactoryInterface;
 use Zenky\SyncGates\Interfaces\Responses\SyncGateResponseInterface;
 use Zenky\SyncGates\Interfaces\SyncGateServiceInterface;
 use Zenky\SyncGates\Responses\SyncGateResponse;
@@ -13,9 +14,9 @@ abstract class AbstractSyncGateService implements SyncGateServiceInterface
 {
     private ClientInterface $client;
 
-    public function __construct(ClientInterface $client)
+    public function __construct(ApiClientFactoryInterface $factory)
     {
-        $this->client = $client;
+        $this->client = $factory->makeHttpClient();
     }
 
     abstract protected function getBaseUrl(string $token): string;
