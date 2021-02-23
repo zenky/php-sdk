@@ -10,7 +10,7 @@ use Zenky\Modifiers\Interfaces\ProductModifierInterface;
 
 class ProductModifier extends AbstractApiEntity implements ProductModifierInterface
 {
-    public function getModifier(): ModifierInterface
+    public function getModifier(): ?ModifierInterface
     {
         return $this->getAttributeEntity('modifier', fn (array $data) => new Modifier($data));
     }

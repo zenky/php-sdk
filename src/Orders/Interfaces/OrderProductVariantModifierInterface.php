@@ -8,7 +8,7 @@ use Zenky\Common\Interfaces\PriceInterface;
 use Zenky\Modifiers\Interfaces\ModifierInterface;
 use Zenky\Modifiers\Interfaces\ModifiersGroupInterface;
 
-interface OrderProductModifierInterface
+interface OrderProductVariantModifierInterface
 {
     public function getId(): string;
 
@@ -26,13 +26,13 @@ interface OrderProductModifierInterface
 
     public function getQuantity(): int;
 
-    public function getTotalPrice(): PriceInterface;
+    public function getTotalPrice(): ?PriceInterface;
 
-    public function getUnitPrice(): PriceInterface;
+    public function getUnitPrice(): ?PriceInterface;
 
-    public function getOriginalTotalPrice(): PriceInterface;
+    public function getOriginalTotalPrice(): ?PriceInterface;
 
-    public function getOriginalUnitPrice(): PriceInterface;
+    public function getOriginalUnitPrice(): ?PriceInterface;
 
     public function getModifier(): ?ModifierInterface;
 

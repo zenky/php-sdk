@@ -6,7 +6,7 @@ namespace Zenky\Modifiers\Interfaces;
 
 interface ProductModifiersGroupInterface
 {
-    public function getModifiersGroup(): ModifiersGroupInterface;
+    public function getModifiersGroup(): ?ModifiersGroupInterface;
 
     public function getMinQuantity(): int;
 

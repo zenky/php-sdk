@@ -41,11 +41,7 @@ class Modifier extends AbstractApiEntity implements ModifierInterface
 
     public function getPrice(): ?PriceInterface
     {
-        if (is_null($this->data['price'])) {
-            return null;
-        }
-
-        return $this->getCachedEntity('price', fn () => new Price($this->data['price']));
+        return $this->getAttributeEntity('price', fn (array $data) => new Price($data));
     }
 
     public function getCreatedAt(): \DateTimeImmutable

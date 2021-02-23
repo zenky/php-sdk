@@ -11,7 +11,7 @@ use Zenky\Modifiers\Interfaces\ProductModifiersGroupInterface;
 
 class ProductModifiersGroup extends AbstractApiEntity implements ProductModifiersGroupInterface
 {
-    public function getModifiersGroup(): ModifiersGroupInterface
+    public function getModifiersGroup(): ?ModifiersGroupInterface
     {
         return $this->getAttributeEntity('group', fn (array $data) => new ModifiersGroup($data));
     }
