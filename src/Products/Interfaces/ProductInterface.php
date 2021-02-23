@@ -9,8 +9,10 @@ use Zenky\Common\Interfaces\EnumInterface;
 use Zenky\Common\Interfaces\WeightInterface;
 use Zenky\ExternalIdentifiers\Interfaces\HasExternalIdentifier;
 use Zenky\Media\Interfaces\MediaInterface;
+use Zenky\Modifiers\Interfaces\HasModifiersGroupsInterface;
+use Zenky\Modifiers\Interfaces\HasModifiersInterface;
 
-interface ProductInterface extends HasExternalIdentifier
+interface ProductInterface extends HasExternalIdentifier, HasModifiersInterface, HasModifiersGroupsInterface
 {
     public function getId(): string;
 

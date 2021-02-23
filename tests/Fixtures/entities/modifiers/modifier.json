@@ -1,0 +1,26 @@
+{
+  "id": "92799c46-9c75-44a1-9688-390534f68505",
+  "store_id": "9275c4be-3ec7-4ed3-8c9c-5ac2c8404987",
+  "modifiers_group_id": null,
+  "name": "Без упаковки",
+  "display_name": "Без упаковки",
+  "price": null,
+  "created_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2021-01-13 03:55:05",
+    "datetime": "2021-01-13 11:55:05",
+    "datetime_at": "13.01.2021 в 11:55",
+    "date": "13.01.2021",
+    "diff": "1 месяц назад",
+    "timestamp": 1610510105
+  },
+  "updated_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2021-01-13 03:55:05",
+    "datetime": "2021-01-13 11:55:05",
+    "datetime_at": "13.01.2021 в 11:55",
+    "date": "13.01.2021",
+    "diff": "1 месяц назад",
+    "timestamp": 1610510105
+  }
+}

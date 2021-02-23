@@ -6,9 +6,11 @@ namespace Zenky\Products\Interfaces;
 
 use Zenky\Common\Interfaces\PriceInterface;
 use Zenky\ExternalIdentifiers\Interfaces\HasExternalIdentifier;
+use Zenky\Modifiers\Interfaces\HasModifiersGroupsInterface;
+use Zenky\Modifiers\Interfaces\HasModifiersInterface;
 use Zenky\VariantOptions\Interfaces\VariantOptionValueInterface;
 
-interface ProductVariantInterface extends HasExternalIdentifier
+interface ProductVariantInterface extends HasExternalIdentifier, HasModifiersInterface, HasModifiersGroupsInterface
 {
     public function getId(): string;
 

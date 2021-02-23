@@ -12,12 +12,16 @@ use Zenky\Common\Interfaces\WeightInterface;
 use Zenky\Common\Weight;
 use Zenky\ExternalIdentifiers\Traits\IncludesExternalIdentifier;
 use Zenky\Media\Media;
+use Zenky\Modifiers\Traits\IncludesModifiers;
+use Zenky\Modifiers\Traits\IncludesModifiersGroups;
 use Zenky\Products\Interfaces\ProductInterface;
 use Zenky\Products\Interfaces\ProductSettingsInterface;
 
 class Product extends AbstractApiEntity implements ProductInterface
 {
     use IncludesExternalIdentifier;
+    use IncludesModifiers;
+    use IncludesModifiersGroups;
 
     public function getId(): string
     {

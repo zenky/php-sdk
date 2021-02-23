@@ -1,0 +1,143 @@
+{
+  "id": "92861bd9-2809-43f9-a7c3-78d0e5bc6e33",
+  "store_id": "9275c4be-3ec7-4ed3-8c9c-5ac2c8404987",
+  "name": "План Apple Care",
+  "display_name": "План Apple Care",
+  "created_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2021-01-19 09:01:44",
+    "datetime": "2021-01-19 17:01:44",
+    "datetime_at": "19.01.2021 в 17:01",
+    "date": "19.01.2021",
+    "diff": "1 месяц назад",
+    "timestamp": 1611046904
+  },
+  "updated_at": {
+    "timezone": "Asia/Irkutsk",
+    "datetime_utc": "2021-01-19 09:01:44",
+    "datetime": "2021-01-19 17:01:44",
+    "datetime_at": "19.01.2021 в 17:01",
+    "date": "19.01.2021",
+    "diff": "1 месяц назад",
+    "timestamp": 1611046904
+  },
+  "modifiers": [
+    {
+      "id": "92861bd9-2a19-466e-afb2-cf523f403019",
+      "store_id": "9275c4be-3ec7-4ed3-8c9c-5ac2c8404987",
+      "modifiers_group_id": "92861bd9-2809-43f9-a7c3-78d0e5bc6e33",
+      "name": "1 год",
+      "display_name": "1 год",
+      "price": {
+        "value": 200000,
+        "short": "2 000",
+        "trimmed": "2000",
+        "full": "2 000₽",
+        "currency": {
+          "name": "Российский рубль",
+          "thousands_separator": " ",
+          "decimals_separator": ".",
+          "prefix": "",
+          "suffix": "₽",
+          "symbol": "₽"
+        }
+      },
+      "created_at": {
+        "timezone": "Asia/Irkutsk",
+        "datetime_utc": "2021-01-19 09:01:44",
+        "datetime": "2021-01-19 17:01:44",
+        "datetime_at": "19.01.2021 в 17:01",
+        "date": "19.01.2021",
+        "diff": "1 месяц назад",
+        "timestamp": 1611046904
+      },
+      "updated_at": {
+        "timezone": "Asia/Irkutsk",
+        "datetime_utc": "2021-01-19 09:01:44",
+        "datetime": "2021-01-19 17:01:44",
+        "datetime_at": "19.01.2021 в 17:01",
+        "date": "19.01.2021",
+        "diff": "1 месяц назад",
+        "timestamp": 1611046904
+      }
+    },
+    {
+      "id": "92861bd9-2a72-4d30-bb95-2b720b274f58",
+      "store_id": "9275c4be-3ec7-4ed3-8c9c-5ac2c8404987",
+      "modifiers_group_id": "92861bd9-2809-43f9-a7c3-78d0e5bc6e33",
+      "name": "2 года",
+      "display_name": "2 года",
+      "price": {
+        "value": 300000,
+        "short": "3 000",
+        "trimmed": "3000",
+        "full": "3 000₽",
+        "currency": {
+          "name": "Российский рубль",
+          "thousands_separator": " ",
+          "decimals_separator": ".",
+          "prefix": "",
+          "suffix": "₽",
+          "symbol": "₽"
+        }
+      },
+      "created_at": {
+        "timezone": "Asia/Irkutsk",
+        "datetime_utc": "2021-01-19 09:01:44",
+        "datetime": "2021-01-19 17:01:44",
+        "datetime_at": "19.01.2021 в 17:01",
+        "date": "19.01.2021",
+        "diff": "1 месяц назад",
+        "timestamp": 1611046904
+      },
+      "updated_at": {
+        "timezone": "Asia/Irkutsk",
+        "datetime_utc": "2021-01-19 09:01:44",
+        "datetime": "2021-01-19 17:01:44",
+        "datetime_at": "19.01.2021 в 17:01",
+        "date": "19.01.2021",
+        "diff": "1 месяц назад",
+        "timestamp": 1611046904
+      }
+    },
+    {
+      "id": "92861bd9-2ab1-4377-901e-f815caa1c985",
+      "store_id": "9275c4be-3ec7-4ed3-8c9c-5ac2c8404987",
+      "modifiers_group_id": "92861bd9-2809-43f9-a7c3-78d0e5bc6e33",
+      "name": "5 лет",
+      "display_name": "5 лет",
+      "price": {
+        "value": 500000,
+        "short": "5 000",
+        "trimmed": "5000",
+        "full": "5 000₽",
+        "currency": {
+          "name": "Российский рубль",
+          "thousands_separator": " ",
+          "decimals_separator": ".",
+          "prefix": "",
+          "suffix": "₽",
+          "symbol": "₽"
+        }
+      },
+      "created_at": {
+        "timezone": "Asia/Irkutsk",
+        "datetime_utc": "2021-01-19 09:01:44",
+        "datetime": "2021-01-19 17:01:44",
+        "datetime_at": "19.01.2021 в 17:01",
+        "date": "19.01.2021",
+        "diff": "1 месяц назад",
+        "timestamp": 1611046904
+      },
+      "updated_at": {
+        "timezone": "Asia/Irkutsk",
+        "datetime_utc": "2021-01-19 09:01:44",
+        "datetime": "2021-01-19 17:01:44",
+        "datetime_at": "19.01.2021 в 17:01",
+        "date": "19.01.2021",
+        "diff": "1 месяц назад",
+        "timestamp": 1611046904
+      }
+    }
+  ]
+}

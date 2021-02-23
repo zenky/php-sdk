@@ -8,12 +8,16 @@ use Zenky\Api\Entities\AbstractApiEntity;
 use Zenky\Common\Interfaces\PriceInterface;
 use Zenky\Common\Price;
 use Zenky\ExternalIdentifiers\Traits\IncludesExternalIdentifier;
+use Zenky\Modifiers\Traits\IncludesModifiers;
+use Zenky\Modifiers\Traits\IncludesModifiersGroups;
 use Zenky\Products\Interfaces\ProductVariantInterface;
 use Zenky\VariantOptions\VariantOptionValue;
 
 class ProductVariant extends AbstractApiEntity implements ProductVariantInterface
 {
     use IncludesExternalIdentifier;
+    use IncludesModifiers;
+    use IncludesModifiersGroups;
 
     public function getId(): string
     {
