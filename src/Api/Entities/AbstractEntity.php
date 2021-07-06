@@ -14,7 +14,7 @@ abstract class AbstractEntity
         $this->data = $data;
     }
 
-    public function getData()
+    public function getData(): array
     {
         return $this->data;
     }

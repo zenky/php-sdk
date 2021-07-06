@@ -6,7 +6,7 @@ namespace Zenky\Api\Entities;
 
 abstract class AbstractApiEntity extends AbstractEntity
 {
-    protected function getDateTimeInstance(string $attribute): \DateTimeImmutable
+    protected function getDateTimeInstance(string $attribute): ?\DateTimeImmutable
     {
         return $this->getCachedEntity($attribute.'_datetime', function () use ($attribute) {
             if (!$this->attributeFilled($attribute)) {
