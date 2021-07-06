@@ -75,7 +75,7 @@ class Order extends AbstractApiEntity implements OrderInterface
 
     public function getLocalDeliveryDate(): ?\DateTimeImmutable
     {
-        return $this->getDateTimeInstance('deliver_at_local');
+        return $this->getDateTimeInstance('deliver_at_local', 'datetime');
     }
 
     public function getTotalPrice(): PriceInterface
